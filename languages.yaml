@@ -1,0 +1,127 @@
+malayalam:
+  - 0D00
+  - 0D7F
+
+armenian:
+  - 0530
+  - 058F
+
+coptic:
+  - 2C80
+  - 2CFF
+
+cypriot:
+  - 10800
+  - 1083F
+
+cyrillic:
+  - 0400
+  - 04FF
+  - 0500
+  - 052F
+  - 2DE0
+  - 2DFF
+  - A640
+  - A69F
+
+georgian:
+  - 10A0
+  - 10FF
+  - 2D00
+  - 2D2F
+
+glagolithic:
+  - 2C00
+  - 2C5F
+
+gothic:
+  - 10330
+  - 1034F
+
+greek:
+  - 0370
+  - 03FF
+  - 1F00
+  - 1FFF
+
+latin:
+  - 0000
+  - 007F
+  - 0080
+  - 00FF
+  - 0100
+  - 017F
+  - 0180
+  - 024F
+  - 2C60
+  - 2C7F
+  - A720
+  - A7FF
+  - 1E00
+  - 1EFF
+  - FB00
+  - FB4F
+  - FB00
+  - FB4F
+  - FF00
+  - FFEF
+
+ogham:
+  - 1680
+  - 169F
+
+old_italics:
+  - 10300
+  - 1032F
+
+phaistos:
+  - 101D0
+  - 101FF
+
+runic:
+  - 16A0
+  - 16FF
+
+shavian:
+  - 10450
+  - 1047F
+
+bamum:
+  - A6A0
+  - A6FF
+  - 16800
+  - 16A3F
+
+egyptian_hieroglyphs:
+  - 13000
+  - 1342F
+
+ethiopic:
+  - 1200
+  - 137F
+  - 1380
+  - 139F
+  - 2D80
+  - 2DDF
+  - AB00
+  - AB2F
+
+meroitic_cursive:
+  - 109A0
+  - 109FF
+
+meroitic_hieroglyphs:
+  - 10980
+  - 1099F
+
+nko:
+  - 07C0
+  - 07FF
+
+osmanya:
+  - 10480
+  - 104AF
+
+tifinagh:
+  - 2D30
+  - 2D7F
