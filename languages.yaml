@@ -125,3 +125,39 @@ osmanya:
 tifinagh:
   - 2D30
   - 2D7F
+
+vai:
+  - A500
+  - A63F
+
+arabic:
+  - 0600
+  - 06FF
+  - 0750
+  - 077F
+  - 08A0
+  - 08FF
+  - FB50
+  - FDFF
+  - FE70
+  - FEFF
+
+aramic:
+  - 10840
+  - 1085F
+
+avestan:
+  - 10B00
+  - 10B3F
+
+carian:
+  - 102A0
+  - 102DF
+
+cuniform:
+  - 12000
+  - 123FF
+
+cuniform_numbers_punctuation:
+  - 12400
+  - 1247F
