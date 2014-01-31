@@ -5,7 +5,7 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 <tt>gem install prose</tt>
 
 ##Require
-<tt>require 'porse'</tt>
+<tt>require 'prose'</tt>
 
 ##Usage
 	"אודם".porse?      #will return ['hebrew']
