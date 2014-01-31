@@ -5,13 +5,12 @@ Ruby Gem to identifies languages from a string. Porse literally means, written o
 <tt>gem install prose</tt>
 
 ##Require
-<tt>require 'yasha'</tt>
+<tt>require 'porse'</tt>
 
 ##Usage
 	"אודם".porse? #will return ['hebrew']
 	"ruby".prose? #will return ['latin']
-	"माणिक".prose? #will return ['hindi']
-	"אודם ruby माणिक".prose? #will return ['hebrew', 'latin', 'hindi']
+	"אודם ruby".prose? #will return ['hebrew', 'latin']
 
 ##Source
 http://unicode.org/charts/

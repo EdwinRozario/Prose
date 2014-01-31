@@ -61,3 +61,14 @@ FE70-FEFF: arabic
 0B00-0B7F: oriya
 0B80-0BFF: tamil
 0C00-0C7F: telugu
+11000-1107F: brahmi
+0900-097F: devanagari
+A8E0-A8FF: devanagari
+103A0-103DF: old_persian
+10380-1039F: ugaritic
+10920-1093F: lydian
+0840-085F: mandaic
+10A60-10A7F: old_south_arabian
+10B60-10B7F: pahlavi
+10B40-10B5F: parthian
+10900-1091F: phoenician
