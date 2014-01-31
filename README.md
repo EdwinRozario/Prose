@@ -10,7 +10,7 @@ Ruby Gem to identifies languages from a string. Porse literally means, written o
 ##Usage
 	"אודם".porse?      #will return ['hebrew']
 	"ruby".prose?      #will return ['latin']
-    "हिन्दी".prose?  #will return ['devanagari']
+	"हिन्दी".prose?  #will return ['devanagari']
 	"אודם ruby".prose?  #will return ['hebrew', 'latin']
 
 ##Source
