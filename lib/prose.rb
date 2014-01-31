@@ -2,7 +2,7 @@ require 'yaml'
 
 class String
 
-  def porse?
+  def prose?
   	find_languages_in(self) 
   end
 
@@ -10,7 +10,7 @@ class String
 
 
   def unicode_ranges
-  	@ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/porse/porse.yaml" ) )
+  	@ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
   end
 
   def language_of letter
