@@ -1,9 +1,17 @@
-##Prose Gem
-Identifies languages from a string.
+##Prose
+Ruby Gem to identifies languages from a string. Porse literally means, written or spoken language in its ordinary form, without metrical structure.
 
-#Installation
+##Installation
 <tt>gem install prose</tt>
 
-This program is intented to identify human language from unicode.
+##Require
+<tt>require 'yasha'</tt>
 
-Data: http://unicode.org/charts/
+##Usage
+	"אודם".porse? #will return ['hebrew']
+	"ruby".prose? #will return ['latin']
+	"माणिक".prose? #will return ['hindi']
+	"אודם ruby माणिक".prose? #will return ['hebrew', 'latin', 'hindi']
+
+##Source
+http://unicode.org/charts/
