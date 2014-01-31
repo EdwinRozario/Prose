@@ -1,5 +1,5 @@
 ##Prose
-Ruby Gem to identifies languages from a string. Porse literally means, written or spoken language in its ordinary form, without metrical structure. Since we are dealing with unicode the gem dosent necessarily identifies the language all the time instead identifies the origin of the script. Example english alphabets belongs to latin alphabet set.
+Ruby Gem to identifies languages from a string. Porse literally means, written or spoken language in its ordinary form, without metrical structure.
 
 ##Installation
 <tt>gem install prose</tt>
@@ -12,6 +12,9 @@ Ruby Gem to identifies languages from a string. Porse literally means, written o
 	"ruby".prose?      #will return ['latin']
 	"हिन्दी".prose?  #will return ['devanagari']
 	"אודם ruby".prose?  #will return ['hebrew', 'latin']
+
+##Note
+ Since we are dealing with unicode the gem dosent necessarily identifies the language all the time instead identifies the origin of the script. Example English alphabets belongs to Latin alphabet set. And Hindi letters belong to Devanagri.
 
 ##Source
 http://unicode.org/charts/ 
