@@ -8,7 +8,7 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 <tt>require 'prose'</tt>
 
 ##Usage
-	"אודם".porse?      #will return ['hebrew']
+	"אודם".prose?      #will return ['hebrew']
 	"ruby".prose?      #will return ['latin']
 	"हिन्दी".prose?  #will return ['devanagari']
 	"אודם ruby".prose?  #will return ['hebrew', 'latin']
