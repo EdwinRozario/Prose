@@ -8,9 +8,9 @@ Ruby Gem to identifies languages from a string. Porse literally means, written o
 <tt>require 'porse'</tt>
 
 ##Usage
-	"אודם".porse? #will return ['hebrew']
-	"ruby".prose? #will return ['latin']
-	"אודם ruby".prose? #will return ['hebrew', 'latin']
+	"אודם".porse?      #will return ['hebrew']
+	"ruby".prose?      #will return ['latin']
+	"אודם ruby".prose?  #will return ['hebrew', 'latin']
 
 ##Source
-http://unicode.org/charts/
+http://unicode.org/charts/ 
