@@ -1,5 +1,5 @@
 ##Prose
-Ruby Gem to identifies languages from a string. Porse literally means, written or spoken language in its ordinary form, without metrical structure.
+Ruby Gem to identifies languages from a string. Prose literally means, written or spoken language in its ordinary form, without metrical structure.
 
 ##Installation
 <tt>gem install prose</tt>
