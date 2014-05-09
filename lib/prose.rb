@@ -3,12 +3,16 @@ require 'yaml'
 
 class String
 
-  def prose?
-    find_languages_in(self) 
+  def prose? # rename method as prose
+    find_languages_in(self) # rename find_origin_of
+  end
+ 
+  # Future addition. To return possible languegs under the origin
+  def language
+    find_language_from(find_origin_of(self))
   end
 
   private
-
 
   def unicode_ranges
     @ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
