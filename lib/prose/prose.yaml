@@ -1,4 +1,4 @@
-ranges:
+# ranges:
   0590-05FF: hebrew
   FB00–FB4F: hebrew
   00D00-0D7F: malayalam
@@ -141,6 +141,7 @@ ranges:
   18B0-18FF: united_canadian_aborginal
 #0000-007F: ASCII
 
-languages:
-  hebrew:
-    - hebrew
+# languages:
+# #Future. if there is any
+#   hebrew:
+#     - hebrew

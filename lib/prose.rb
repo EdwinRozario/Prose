@@ -3,28 +3,43 @@ require 'yaml'
 
 class String
 
-  def prose? # rename method as prose
+  RANGES ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
+  LANGUAGES ||= RANGES.values.uniq
+
+  def prose
     find_languages_in(self) # rename find_origin_of
   end
- 
-  # Future addition. To return possible languegs under the origin
-  def language
-    find_language_from(find_origin_of(self))
+
+  LANGUAGES.each do |language|
+    eval <<-EOM 
+      def "#{language}?"
+        "input : #{self} | method : #{__method__}"
+      end
+    EOM
+    # define_method "#{language}?" do
+    #   self.is_language?
+    # end
   end
 
-  private
+  # private
 
-  def unicode_ranges
-    @ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
+  def is_language?
+    "input : #{self} | method : #{__method__}"
   end
+
+  # def unicode_ranges
+  #   @ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
+  # end
 
   def language_of letter
+    p "language of"
     result = []
     int_ordinal = letter.ord
-    unicode_ranges.keys.each do |key|
+    RANGES.keys.each do |key|
       min, max = key.split("-")
       result << unicode_ranges[key] if (min.to_i(16) < int_ordinal) and (max.to_i(16) > int_ordinal)
     end
+    p "result : #{result}"
     return result
   end
 
