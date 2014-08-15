@@ -7,7 +7,7 @@ test_languages = [["arabic"], ["kannada"], ["latin"], ["hebrew"],["devanagari"],
 
 test_words.each do |word|
   puts "#{word} : #{word.prose} : #{word.prose == test_languages[test_words.index(word)]}"
-  puts word.hebrew?
+  word.hebrew?
 end
 
 
