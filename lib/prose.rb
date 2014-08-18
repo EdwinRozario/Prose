@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'yaml'
+require 'pry'
 
 class String
 
@@ -16,28 +17,18 @@ class String
 
   # __method__ cannot individually identify each method defined dynamically with define_method
   # Since this clumsy fix 
-  LANGUAGES.each do |language|
+  LANGUAGES.keys.each do |language|
     eval <<-EOM 
-      def #{language}?
-        language = __method__.gsub("?", "")
+      def #{language.split('-').first}?(pure = false)
+        language = __method__.to_s.gsub("?", "")
         result = find_languages_in(self)
-        (result - [language]).empty?
+        pure ? ((result - [language]).empty?) : (result.include? language)
       end
     EOM
   end
 
-  # private
-
-  # def is_language?
-  #   "input : #{self} | method : #{__method__}"
-  # end
-
-  # def unicode_ranges
-  #   @ranges ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
-  # end
-
   def language_of ordinal, min_range, max_range
-    (min_range.to_i(16) < ordinal) and (max_range.to_i(16) > ordinal)      
+    (min_range.to_i(16) < ordinal) and (max_range.to_i(16) > ordinal)
   end
 
   def languages_of letter
@@ -45,7 +36,8 @@ class String
     int_ordinal = letter.ord
     RANGES.keys.each do |key|
       min, max = key.split("-")
-      result << RANGES[key].split("-").first if language_of(int_ordinal, min, max) #(min.to_i(16) < int_ordinal) and (max.to_i(16) > int_ordinal)
+      ordinal_in_range = language_of(int_ordinal, min, max)
+      result << RANGES[key].split("-").first if ordinal_in_range #language_of(int_ordinal, min, max) #(min.to_i(16) < int_ordinal) and (max.to_i(16) > int_ordinal)
     end
     return result
   end
@@ -53,7 +45,7 @@ class String
   def find_languages_in word
     result = []
     word.split('').each do |letter|
-      result << languages_of(letter) if not letter == " "
+      result += languages_of(letter) if (letter != " ")
     end
     return result.uniq
   end
