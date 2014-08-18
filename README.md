@@ -8,16 +8,17 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 <tt>require 'prose'</tt>
 
 ##Usage
-	"אודם".prose       # will return ['hebrew']
-	"Ruby".prose      # will return ['latin']
-	"हिन्दी".prose      # will return ['devanagari']
+	"אודם".prose     # will return ['hebrew']
+	"Ruby".prose     # will return ['latin']
+	"हिन्दी".prose     # will return ['devanagari']
 	"אודם ruby".prose  # will return ['hebrew', 'latin']
 
-	"لعربية".arabic?    # will return true. This will work only for languages identified by Prose
-	"Peace".latin?    # will return true. But .english? will return an error
+	"لعربية".arabic?  # will return true. This will work only for languages identified by Prose
+	"Peace".latin?  # will return true. But .english? will return an error
 
-	"אודם لعربية".hebrew? # will return true, since the string contains Hebrew.
-	"אודם لعربية".hebrew?(pure = true) # will return false, since the string contains Arabic too. This will return ture only when the string is pure Hebrew.
+	"אודם لعربية".hebrew? #will return true, since the string contains Hebrew.
+	"אודם لعربية".hebrew?(pure = true) # will return false, since the string contains Arabic too. 
+	                                #This will return ture only when the string is pure Hebrew.
 
 
 ##Note
