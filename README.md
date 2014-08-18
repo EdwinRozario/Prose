@@ -17,8 +17,10 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 	"Peace".latin?  # will return true. But .english? will return an error
 
 	"אודם لعربية".hebrew? #will return true, since the string contains Hebrew.
-	"אודם لعربية".hebrew?(pure = true) # will return false, since the string contains Arabic too. 
-	                                #This will return ture only when the string is pure Hebrew.
+	
+	"אודם لعربية".hebrew?(pure = true) 
+	# will return false, since the string contains Arabic too. 
+	# This will return ture only when the string is pure Hebrew.
 
 
 ##Note
