@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 require_relative "../lib/prose.rb"
-#require 'prose'
 
 test_words = ["لعربية", "ಕನ್ನಡ", "test", "עִבְרִית", "हिन्दी", "fעִةಕt"]
 test_languages = [["arabic"], ["kannada"], ["latin"], ["hebrew"],["devanagari"],["latin", "hebrew", "arabic", "kannada"]]
