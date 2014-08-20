@@ -1,4 +1,4 @@
-##Prose
+##Prose <a href="http://badge.fury.io/rb/prose"><img src="https://badge.fury.io/rb/prose.svg" alt="Gem Version" height="18"></a>
 Ruby Gem to identifies languages from a string. Prose literally means, written or spoken language in its ordinary form, without metrical structure.
 
 ##Installation
