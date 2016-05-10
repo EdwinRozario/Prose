@@ -39,7 +39,7 @@ class String
   end
 
   def find_origins_in word
-    word.split('').map {|letter| languages_of(letter) unless (letter == " ")}.compact.uniq
+    word.split('').map {|letter| languages_of(letter) unless (letter == " ")}.flatten.compact.uniq
   end
 
 end
