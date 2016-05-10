@@ -7,12 +7,8 @@ class String
   LANGUAGES ||= RANGES.invert
 
   def prose
-    find_languages_in(self) # rename find_origin_of
+    find_origins_in(self)
   end
-
-  # define_method "#{language}?" do
-  #   self.is_language?
-  # end
 
   # __method__ cannot individually identify each method defined dynamically with define_method
   # Since this clumsy fix 
@@ -38,15 +34,12 @@ class String
       ordinal_in_range = language_of(int_ordinal, min, max)
       result << RANGES[key].split("-").first if ordinal_in_range #language_of(int_ordinal, min, max) #(min.to_i(16) < int_ordinal) and (max.to_i(16) > int_ordinal)
     end
-    return result
+
+    result
   end
 
-  def find_languages_in word
-    result = []
-    word.split('').each do |letter|
-      result += languages_of(letter) if (letter != " ")
-    end
-    return result.uniq
+  def find_origins_in word
+    word.split('').map {|letter| languages_of(letter) unless (letter == " ")}.compact.uniq
   end
 
 end
