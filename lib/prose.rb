@@ -16,7 +16,7 @@ class String
     eval <<-EOM 
       def #{language.split('-').first}?(pure = false)
         language = __method__.to_s.gsub("?", "")
-        result = find_languages_in(self)
+        result = find_origins_in(self)
         pure ? ((result - [language]).empty?) : (result.include? language)
       end
     EOM

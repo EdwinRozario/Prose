@@ -1,4 +1,5 @@
 # ranges:
+  4E00–9FD5: "CJK"
   0590-05FF: "hebrew-1"
   FB00–FB4F: "hebrew-2"
   00D00-0D7F: malayalam
