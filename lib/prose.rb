@@ -12,6 +12,8 @@ class String
 
   # __method__ cannot individually identify each method defined dynamically with define_method
   # Since this clumsy fix 
+  # Refactor this so that the dynamic methods no more use find_origins_in instead only check 
+  # the ranges for the specific language only
   LANGUAGES.keys.each do |language|
     eval <<-EOM 
       def #{language.split('-').first}?(pure = false)
