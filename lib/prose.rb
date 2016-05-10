@@ -34,7 +34,7 @@ class String
     RANGES.keys.each do |key|
       min, max = key.split("-")
       ordinal_in_range = language_of(int_ordinal, min, max)
-      result << RANGES[key].split("-").first if ordinal_in_range #language_of(int_ordinal, min, max) #(min.to_i(16) < int_ordinal) and (max.to_i(16) > int_ordinal)
+      result << RANGES[key].split("-").first if ordinal_in_range
     end
 
     result
