@@ -1,13 +1,13 @@
-##Prose <a href="http://badge.fury.io/rb/prose"><img src="https://badge.fury.io/rb/prose.svg" alt="Gem Version" height="18"></a>
+## Prose <a href="http://badge.fury.io/rb/prose"><img src="https://badge.fury.io/rb/prose.svg" alt="Gem Version" height="18"></a>
 Ruby Gem to identifies languages from a string. Prose literally means, written or spoken language in its ordinary form, without metrical structure.
 
-##Installation
+## Installation
 <tt>gem install prose</tt>
 
-##Require
+## Require
 <tt>require 'prose'</tt>
 
-##Usage
+## Usage
 	"אודם".prose     # will return ['hebrew']
 	"Ruby".prose     # will return ['latin']
 	"हिन्दी".prose     # will return ['devanagari']
@@ -23,10 +23,10 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 	# This will return ture only when the string is pure Hebrew.
 
 
-##Note
+## Note
  Since we are dealing with unicode the gem dosent necessarily identifies the language all the time instead identifies the origin of the script. Example English alphabets belongs to Latin alphabet set. And Hindi letters belong to Devanagri. Havent included CJK yet.
 
  CJK and other symbols will be recognaised in future.
 
-##Source
+## Source
 http://unicode.org/charts/
