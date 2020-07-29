@@ -23,6 +23,9 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 	# will return false, since the string contains Arabic as well. 
 	# This will return ture only when the string is pure Hebrew.
 
+	"אודם لعربية".percentage_of('hebrew')
+	# will return an integer for what percentage of characters in the text is hebrew. 
+
 ## Note
  Since we are dealing with unicode the gem dosent necessarily identifies the language all the time instead identifies the origin of the script. Example English alphabets belongs to Latin alphabet set. And Hindi letters belong to Devanagri. Havent included CJK yet.
 

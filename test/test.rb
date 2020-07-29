@@ -23,5 +23,5 @@ p test_words[5].pure_hebrew? == false
 p test_words[3].pure_hebrew? == true
 
 puts 'Percentage of hebrew in word'
-p test_words[5].percentge_of('hebrew') == 25
-p test_words[2].percentge_of('latin') == 100
+p test_words[5].percentage_of('hebrew') == 25
+p test_words[2].percentage_of('latin') == 100

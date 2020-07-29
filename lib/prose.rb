@@ -35,7 +35,7 @@ class String
     language_ranges.map { |range| char_in_range?(char.ord, range) }.include? true
   end
 
-  def percentge_of(language)
+  def percentage_of(language)
     total_languages = find_origins_in(self)
 
     occurance_of_language = total_languages.count(language).to_f
