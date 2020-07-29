@@ -1,31 +1,279 @@
-# ranges:
+languages:
+  CJK:
+    - 4E00–9FD5
+  hebrew:
+    - 0590-05FF
+    - FB00–FB4F
+  malayalam:
+    - 00D00-0D7F
+  armenian:
+    - 0530-058F
+  coptic:
+    - 2C80-2CFF
+  cypriot:
+    - 10800-1083F
+  cyrillic:
+    - 0400-04FF
+    - 0500-052F
+    - 2DE0-2DFF
+    - A640-A69F
+  georgian:
+    - 10A0-10FF
+    - 2D00-2D2F
+  glagolithic:
+    - 2C00-2C5F
+  gothic:
+    - 10330-1034F
+  greek:
+    - 0370-03FF
+    - 1F00-1FFF
+  latin:
+    - 0000-007F
+    - 0080-00FF
+    - 0100-017F
+    - 0180-024F
+    - 2C60-2C7F
+    - A720-A7FF
+    - 1E00-1EFF
+    - FB00-FB4F
+    - FB00-FB4F
+    - FF00-FFEF
+  ogham:
+    - 1680-169F
+  old_italics:
+    - 10300-1032F
+  phaistos:
+    - 101D0-101FF
+  runic:
+    - 16A0-16FF
+  shavian:
+    - 10450-1047F
+  bamum:
+    - A6A0-A6FF
+    - 16800-16A3F
+  egyptian_hieroglyphs:
+    - 13000-1342F
+  ethiopic:
+    - 1200-137F
+    - 1380-139F
+    - 2D80-2DDF
+    - AB00-AB2F
+  meroitic_cursive:
+    - 109A0-109FF
+  meroitic_hieroglyphs:
+    - 10980-1099F
+  nko:
+    - 07C0-07FF
+  osmanya:
+    - 10480-104AF
+  tifinagh:
+    - 2D30-2D7F
+  vai:
+    - A500-A63F
+  arabic:
+    - 0600-06FF
+    - 0750-077F
+    - 08A0-08FF
+    - FB50-FDFF
+    - FE70-FEFF
+  aramic:
+    - 10840-1085F
+  avestan:
+    - 10B00-10B3F
+  carian:
+    - 102A0-102DF
+  cuniform:
+    - 12000-123FF
+  cuniform_numbers_punctuation:
+    - 12400-1247F
+  lycian:
+    - 10280-1029F
+  mongolian:
+    - 1800-18AF
+  tibetan:
+    - 0F00-0FFF
+  bengali_assamese:
+    - 0980-09FF
+  gujarati:
+    - 0A80-0AFF
+  kannada:
+    - 0C80-0CFF
+  oriya:
+    - 0B00-0B7F
+  tamil:
+    - 0B80-0BFF
+  telugu:
+    - 0C00-0C7F
+  brahmi:
+    - 11000-1107F
+  devanagari:
+    - 0900-097F
+    - A8E0-A8FF
+  old_persian:
+    - 103A0-103DF
+  ugaritic:
+    - 10380-1039F
+  lydian:
+    - 10920-1093F
+  mandaic:
+    - 0840-085F
+  old_south_arabian:
+    - 10A60-10A7F
+  pahlavi:
+    - 10B60-10B7F
+  parthian:
+    - 10B40-10B5F
+  phoenician:
+    - 10900-1091F
+  samaritan:
+    - 0800-083F
+  syriac:
+    - 0700-074F
+  old_turkic:
+    - 10C00-10C4F
+  phags_pa:
+    - A840-A87F
+  chakma:
+    - 11100-1114F
+  gurmukhi:
+    - 0A00-0A7F
+  kaithi:
+    - 11080-110CF
+  kharoshthi:
+    - 10A00-10A5F
+  lepcha:
+    - 1C00-1C4F
+  limbu:
+    - 1900-194F
+  meetei_mayek:
+    - ABC0-ABFF
+    - AAE0-AAFF
+  ol_chiki:
+    - 1C50-1C7F
+  saurashtra:
+    - A880-A8DF
+  sharada:
+    - 11180-111DF
+  sinhala:
+    - 0D80-0DFF
+  sora_sompeng:
+    - 110D0-110FF
+  syloti_nagri:
+    - A800-A82F
+  takri:
+    - 11680-116CF
+  thaana:
+    - 0780-07BF
+  vedic:
+    - 1CD0-1CFF
+  balinese:
+    - 1B00-1B7F
+  batak:
+    - 1BC0-1BFF
+  buginese:
+    - 1A00-1A1F
+  cham:
+    - AA00-AA5F
+  javanese:
+    - A980-A9DF
+  kayah_li:
+    - A900-A92F
+  khmer:
+    - 1780-17FF 
+    - 19E0-19FF
+  lao:
+    - 0E80-0EFF
+  myanmar:
+    - 1000-109F 
+    - AA60-AA7F
+  new_tai_lue:
+    - 1980-19DF
+  rejang:
+    - A930-A95F
+  sudanese:
+    - 1B80-1BBF
+    - 1CC0-1CCF
+  tai_le:
+    - 1950-197F
+  tai_tham:
+    - 1A20-1AAF
+  tai_viet:
+    - AA80-AADF
+  thai:
+    - 0E00-0E7F
+  buhid:
+    - 1740-175F
+  hanunoo:
+    - 1720-173F
+  tagalog:
+    - 1700-171F
+  tagbanwa:
+    - 1760-177F
+  bopomofo:
+    - 3100-312F
+    - 31A0-31BF
+  hangul_jamo:
+    - 1100-11FF
+    - A960-A97F
+    - D7B0-D7FF
+    - 3130-318F
+    - FF00-FFEF
+  hangul:
+    - AC00-D7AF
+  hiragana:
+    - 3040-309F
+  katakana:
+    - 30A0-30FF
+    - 31F0-31FF
+    - FF00-FFEF
+  kana:
+    - 1B000-1B0FF
+  kanbun:
+    - 3190-319F
+  lisu:
+    - A4D0-A4FF
+  miao:
+    - 16F00-16F9F
+  yi:
+    - A000-A48F
+    - A490-A4CF
+  cherokee:
+    - 13A0-13FF
+  deseret:
+    - 10400-1044F
+  united_canadian_aborginal:
+    - 1400-167F
+    - 18B0-18FF
+
+# Reverse of languages data
+ranges:
   4E00–9FD5: CJK
-  0590-05FF: hebrew-1
-  FB00–FB4F: hebrew-2
+  0590-05FF: hebrew
+  FB00–FB4F: hebrew
   00D00-0D7F: malayalam
   0530-058F: armenian
   2C80-2CFF: coptic
   10800-1083F: cypriot
-  0400-04FF: cyrillic-1
-  0500-052F: cyrillic-2
-  2DE0-2DFF: cyrillic-3
-  A640-A69F: cyrillic-4
-  10A0-10FF: georgian-1
-  2D00-2D2F: georgian-2
+  0400-04FF: cyrillic
+  0500-052F: cyrillic
+  2DE0-2DFF: cyrillic
+  A640-A69F: cyrillic
+  10A0-10FF: georgian
+  2D00-2D2F: georgian
   2C00-2C5F: glagolithic
   10330-1034F: gothic
-  0370-03FF: greek-1
-  1F00-1FFF: greek-2
-  0000-007F: latin-1
-  0080-00FF: latin-2
-  0100-017F: latin-3
-  0180-024F: latin-4
-  2C60-2C7F: latin-5
-  A720-A7FF: latin-6
-  1E00-1EFF: latin-7
-  FB00-FB4F: latin-8
-  FB00-FB4F: latin-9
-  FF00-FFEF: latin-10
+  0370-03FF: greek
+  1F00-1FFF: greek
+  0000-007F: latin
+  0080-00FF: latin
+  0100-017F: latin
+  0180-024F: latin
+  2C60-2C7F: latin
+  A720-A7FF: latin
+  1E00-1EFF: latin
+  FB00-FB4F: latin
+  FB00-FB4F: latin
+  FF00-FFEF: latin
   1680-169F: ogham
   10300-1032F: old_italics
   101D0-101FF: phaistos
@@ -34,9 +282,9 @@
   A6A0-A6FF: bamum
   16800-16A3F: bamum
   13000-1342F: egyptian_hieroglyphs
-  1200-137F: ethiopic-1
-  1380-139F: ethiopic-2
-  2D80-2DDF: ethiopic-3
+  1200-137F: ethiopic
+  1380-139F: ethiopic
+  2D80-2DDF: ethiopic
   AB00-AB2F: ethiopic
   109A0-109FF: meroitic_cursive
   10980-1099F: meroitic_hieroglyphs
@@ -44,11 +292,11 @@
   10480-104AF: osmanya
   2D30-2D7F: tifinagh
   A500-A63F: vai
-  0600-06FF: arabic-1
-  0750-077F: arabic-2
-  08A0-08FF: arabic-3
-  FB50-FDFF: arabic-4
-  FE70-FEFF: arabic-5
+  0600-06FF: arabic
+  0750-077F: arabic
+  08A0-08FF: arabic
+  FB50-FDFF: arabic
+  FE70-FEFF: arabic
   10840-1085F: aramic
   10B00-10B3F: avestan
   102A0-102DF: carian
@@ -64,8 +312,8 @@
   0B80-0BFF: tamil
   0C00-0C7F: telugu
   11000-1107F: brahmi
-  0900-097F: devanagari-1
-  A8E0-A8FF: devanagari-2
+  0900-097F: devanagari
+  A8E0-A8FF: devanagari
   103A0-103DF: old_persian
   10380-1039F: ugaritic
   10920-1093F: lydian
@@ -84,8 +332,8 @@
   10A00-10A5F: kharoshthi
   1C00-1C4F: lepcha
   1900-194F: limbu
-  ABC0-ABFF: meetei_mayek-1
-  AAE0-AAFF: meetei_mayek-2
+  ABC0-ABFF: meetei_mayek
+  AAE0-AAFF: meetei_mayek
   1C50-1C7F: ol_chiki
   A880-A8DF: saurashtra
   11180-111DF: sharada
@@ -101,15 +349,15 @@
   AA00-AA5F: cham
   A980-A9DF: javanese
   A900-A92F: kayah_li
-  1780-17FF: khmer-1
-  19E0-19FF: khmer-2
+  1780-17FF: khmer
+  19E0-19FF: khmer
   0E80-0EFF: lao
-  1000-109F: myanmar-1
-  AA60-AA7F: myanmar-2
+  1000-109F: myanmar
+  AA60-AA7F: myanmar
   1980-19DF: new_tai_lue
   A930-A95F: rejang
-  1B80-1BBF: sudanese-1
-  1CC0-1CCF: sudanese-2
+  1B80-1BBF: sudanese
+  1CC0-1CCF: sudanese
   1950-197F: tai_le
   1A20-1AAF: tai_tham
   AA80-AADF: tai_viet
@@ -118,18 +366,18 @@
   1720-173F: hanunoo
   1700-171F: tagalog
   1760-177F: tagbanwa
-  3100-312F: bopomofo-1
-  31A0-31BF: bopomofo-2
-  1100-11FF: hangul_jamo-1
-  A960-A97F: hangul_jamo-2
-  D7B0-D7FF: hangul_jamo-3
-  3130-318F: hangul_jamo-4
-  FF00-FFEF: hangul_jamo-5
+  3100-312F: bopomofo
+  31A0-31BF: bopomofo
+  1100-11FF: hangul_jamo
+  A960-A97F: hangul_jamo
+  D7B0-D7FF: hangul_jamo
+  3130-318F: hangul_jamo
+  FF00-FFEF: hangul_jamo
   AC00-D7AF: hangul
   3040-309F: hiragana
-  30A0-30FF: katakana-1
-  31F0-31FF: katakana-2
-  FF00-FFEF: katakana-3
+  30A0-30FF: katakana
+  31F0-31FF: katakana
+  FF00-FFEF: katakana
   1B000-1B0FF: kana
   3190-319F: kanbun
   A4D0-A4FF: lisu
@@ -138,12 +386,5 @@
   A490-A4CF: yi
   13A0-13FF: cherokee
   10400-1044F: deseret
-  1400-167F: united_canadian_aborginal-1
-  18B0-18FF: united_canadian_aborginal-2
-
-#0000-007F: ASCII
-
-# languages:
-# #Future. if there is any
-#   hebrew:
-#     - hebrew
+  1400-167F: united_canadian_aborginal
+  18B0-18FF: united_canadian_aborginal

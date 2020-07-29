@@ -5,39 +5,53 @@ require 'yaml'
 
 # Ruby string class
 class String
-  LAN_RANGES ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
+  CHAR_CODES ||= YAML::load( File.open( "#{File.expand_path File.dirname(__FILE__)}/prose/prose.yaml" ) )
 
   def prose
     find_origins_in(self)
   end
 
-  # Refactor this so that the dynamic methods no more use find_origins_in instead only check
-  # the ranges for the specific language only
-  LAN_RANGES.invert.keys.each do |language|
-    language_name = language.split('-').first
-    method_name = "#{language_name}?"
+  CHAR_CODES['languages'].each do |language, ranges|
+    method_name = "#{language}?"
 
     define_method(method_name) do
-      find_origins_in(self).include? language_name
+      chars.map { |char| char_belongs_to_language?(char, ranges) }.include? true
     end
 
     define_method("pure_#{method_name}") do
-      (find_origins_in(self) - [language_name]).empty?
+      chars.map { |char| char_belongs_to_language?(char, ranges) }.uniq == [true]
     end
   end
 
-  def language_of(ordinal, min_range, max_range)
+  def char_in_range?(ordinal, range)
+    min_range, max_range = range.split('-')
+
     (min_range.to_i(16) < ordinal) && (max_range.to_i(16) > ordinal)
   end
 
+  def char_belongs_to_language?(char, language_ranges)
+    return true if char == ' '
+
+    language_ranges.map { |range| char_in_range?(char.ord, range) }.include? true
+  end
+
+  def percentge_of(language)
+    total_languages = find_origins_in(self)
+
+    occurance_of_language = total_languages.count(language).to_f
+
+    ((occurance_of_language / total_languages.count.to_f) * 100.0).to_i
+  end
+
   def languages_of(letter)
-    LAN_RANGES.keys.map do |key|
-      min, max = key.split('-')
-      LAN_RANGES[key].split('-').first if language_of(letter.ord, min, max)
+    ranges = CHAR_CODES['ranges']
+
+    ranges.keys.map do |key|
+      ranges[key] if char_in_range?(letter.ord, key)
     end
   end
 
   def find_origins_in(word)
-    word.split('').map { |letter| languages_of(letter) unless letter.empty? }.flatten.compact.uniq
+    word.chars.map { |letter| languages_of(letter) unless letter.empty? }.flatten.compact.uniq
   end
 end
