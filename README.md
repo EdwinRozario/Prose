@@ -18,10 +18,10 @@ Ruby Gem to identifies languages from a string. Prose literally means, written o
 
 	"אודם لعربية".hebrew? #will return true, since the string contains Hebrew.
 	
-	"אודם لعربية".hebrew?(pure = true) 
-	# will return false, since the string contains Arabic too. 
+	"אודם لعربية".pure_hebrew? - version `0.2.3`
+	"אודם لعربية".hebrew?(pure = true) - version `0.2.2`
+	# will return false, since the string contains Arabic as well. 
 	# This will return ture only when the string is pure Hebrew.
-
 
 ## Note
  Since we are dealing with unicode the gem dosent necessarily identifies the language all the time instead identifies the origin of the script. Example English alphabets belongs to Latin alphabet set. And Hindi letters belong to Devanagri. Havent included CJK yet.
