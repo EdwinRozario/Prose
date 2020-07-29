@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'prose'
-  s.version = '0.2.3'
+  s.version = '1.0.0'
   s.date = '2014-08-18'
   s.summary = 'Language detector'
   s.description = 'Language detector'
